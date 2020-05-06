@@ -1,0 +1,114 @@
+.space {
+padding-right: 5px;
+}
+
+.sec1 {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sec2 {
+    background-color:#e9ebee;
+    padding: 100px;
+  }
+
+  .card {
+    margin-bottom: 25px;
+    box-shadow: 0 10px 40px rgba(59, 43, 91, 0.3);
+  }
+  
+  #third {
+    background-image: url(https://i.ibb.co/8sT7KQQ/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #fourth > .container > p:nth-last-of-type(1) {
+    font-size: 25px;
+    margin-bottom: 100px;
+    margin: 100px;
+  }
+  
+  .btn-danger {
+      background-color: #cd4541;
+  }
+
+  footer {
+      display: flex;
+      justify-content: center;
+      padding-top: 15px;
+  }
+
+  h2 {
+      color:#cd4541;
+      animation: type 3s;
+      overflow: hidden;
+      white-space: nowrap;
+  }
+
+  @keyframes type {
+      0% {
+          width:0ch;
+      }
+      100% {
+          width:25ch;
+      }
+  }
+  
+  .row2 {
+      display: flex;
+  }
+
+  .white {
+      text-decoration: none;
+      color: white;
+  }
+
+  .white:hover {
+      text-decoration: none;
+      color: lightgray;
+  }
+
+  .marg {
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 100px;
+      background-color:#f2f2f2;
+  }
+
+  header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-bottom: 50px;
+
+  }
+
+  h3 {
+      color:#cd4541
+  }
+
+  .above {
+      margin-top:20px;
+  }
+
+  h5 {
+      font-size: 12pt;
+  }
+
+  h6 {
+      font-size: 10pt;
+      color: gray;
+  }

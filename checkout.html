@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderSchool Checkout Form</title>
+    <link rel="icon" href="https://i.ibb.co/qnYj95L/tab-icon.png" />
+    <link rel="stylesheet" crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" />
+    <link rel="stylesheet" crossorigin="anonymous"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="marg">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <header>
+        <img src="https://i.ibb.co/gZDvMkT/coderschool-logo.png" alt="CoderSchool logo" height="100px" />
+        <h3>Checkout Form</h3>
+        <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a
+            validation state that can be triggered by attempting to submit the form without completing it.</p>
+
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm col-md-8">
+                    <h4>Billing Address</h4>
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="first">First name</label>
+                                <input type="text" class="form-control" placeholder="First name" id="first">
+                            </div>
+                            <div class="col">
+                                <label for="last">Last name</label>
+                                <input type="text" class="form-control" placeholder="Last name" id="last">
+                            </div>
+                        </div>
+                    </form>
+                    <label for="user" class="above">Username</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="user" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Shipping address is the same as my billing address
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Save this information for next time
+                                </label>
+                            </div>
+                        </div>
+                        <h4>Payment</h4>
+                        <input type="radio" name="credit" value="credit">
+                        <label for="credit">Credit card</label><br>
+                        <input type="radio" name="debit" value="debit">
+                        <label for="debit">Debit card</label><br>
+                        <input type="radio" name="paypal" value="paypal">
+                        <label for="paypal">Paypal</label> 
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="noc">Name on card</label>
+                                    <input type="text" class="form-control" id="noc">
+                                </div>
+                                <div class="col">
+                                    <label for="ccn">Credit card number</label>
+                                    <input type="text" class="form-control" id="ccn">
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="exp">Expiration</label>
+                                    <input type="text" class="form-control" id="exp">
+                                </div>
+                                <div class="col">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" class="form-control" id="cvv">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="above">
+                            <button type="submit" class="btn btn-danger">Continue to checkout</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                  <div class="col-sm col-md-8">
+                                    <h5>Product name</h5>
+                                    <h6>Web Design Bootcamp</h6>
+                                  </div>
+                                  <div class="col-sm col-md-4">
+                                    4.9 M
+                                  </div>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                  <div class="col-sm col-md-8">
+                                    <h5>Second product</h5>
+                                    <h6>React + React Native</h6>
+                                  </div>
+                                  <div class="col-sm col-md-4">
+                                    14.9 M
+                                  </div>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                  <div class="col-sm col-md-8">
+                                    <h5>Third item</h5>
+                                    <h6>Machine Learning</h6>
+                                  </div>
+                                  <div class="col-sm col-md-4">
+                                    14.9 M
+                                  </div>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="list-group-item"style="background-color:lightgray;">
+                            <div class="container">
+                                <div class="row">
+                                  <div class="col-sm col-md-8">
+                                    <h5 style="color: green">Promo code</h5>
+                                    <h6 style="color: green">EXAMPLECODE</h6>
+                                  </div>
+                                  <div class="col-sm col-md-4">
+                                    <p style="color:green">-7.5 M</p>
+                                  </div>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="container">
+                                <div class="row">
+                                  <div class="col-sm col-md-8">
+                                    Total (VND)
+                                  </div>
+                                  <div class="col-sm col-md-4">
+                                    <p style="font-weight: bolder">27.2 M</p>
+                                  </div>
+                                </div>
+                              </div>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Promo code" aria-label="Search" style="margin-top:5px;">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit" style="margin-top:5px;">Redeem</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
