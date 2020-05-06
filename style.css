@@ -112,3 +112,12 @@ padding-right: 5px;
       font-size: 10pt;
       color: gray;
   }
+
+  .colm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      margin-top: 50px;
+  }
